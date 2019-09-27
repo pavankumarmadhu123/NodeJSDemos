@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+           <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <!--Partial view / Nested view-->
+        <% include partials/nav.ejs %>
+
+        <h1>Contact Form</h1>
+
+        <form id="contact-form" method="POST" action="/contactdisplay">
+
+                <lable for="who">Contact Whom?</label>
+                <input type="text" name="who" /> </br>
+                <!-- <input type="text" name="who" value="<%= qs.Person %>"/> </br> -->
+                
+                <lable for="department">Which Dept?</label>
+                <input type="text" name="department"/> </br>
+                
+                <input type="submit" name="submit"/>
+                
+                </form>
+        
+    </body>
+</html>

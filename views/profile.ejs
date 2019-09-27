@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            body{background-color:rgb(235, 135, 193);font-family:Verdana;color:#fff;padding:30px}
+            h1{font-size:48px;text-transform:uppercase}
+            p{font-size:16px;text-align:center}
+        </style>
+    </head>
+    <title>EJS Render page</title>
+    <body>
+        <!--Partial view / Nested view-->
+        <% include partials/nav.ejs %>
+
+        <form action="/home" method="GET" id="form1">
+            <h1>EJS Render Page</h1>
+            <!--Attribute display-->
+            <p>Coolest EJS website...Welcome <%= person %></p>
+            <p> Age: <%= data.age %></p>
+            <p> Job: <%= data.job %></p>
+
+            <!--Array Loop-->
+            <h2>Hobbies</h2>
+            <% data.hobbies.forEach(function(item){ %>
+            <li> <%= item %> </li>
+            <% }); %>
+            
+        </form>
+
+        
+    </body>
+</html>

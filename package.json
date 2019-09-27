@@ -1,0 +1,22 @@
+{
+  "name": "nodejsdemos",
+  "version": "1.0.0",
+  "description": "test nodejs",
+  "main": "app01_consoleLog.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "nodemon": "^1.18.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testapp"
+  ],
+  "author": "pavan",
+  "license": "ISC"
+}
